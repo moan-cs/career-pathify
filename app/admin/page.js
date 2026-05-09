@@ -43,7 +43,7 @@ export default function AdminPage() {
 
     const fetchUsers = async () => {
       try {
-        const res = await fetch('http://localhost:5000/api/admin/users', {
+        const res = await fetch('https://pathify-backend-production.up.railway.app/api/admin/users', {
           headers: {
             'Content-Type': 'application/json',
             Authorization: `Bearer ${token}`,
